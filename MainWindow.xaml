@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="25px" />
+            <RowDefinition Height="10px" />
+            <RowDefinition Height="25px" />
+            <RowDefinition Height="10px" />
+            <RowDefinition Height="25px" />
+            <RowDefinition Height="10px" />
+            <RowDefinition Height="25px" />
+            <RowDefinition Height="10px" />
+            <RowDefinition Height="25px" />
+            <RowDefinition Height="10px" />
+            <RowDefinition Height="25px" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="25px" Grid.Row="1" TextWrapping="Wrap" Text="Enter First- and Lastname" VerticalAlignment="Top" Width="528" BorderBrush="#FF0086FF" Foreground="#FF7F7F84" FontSize="14" BorderThickness="2"/>
+        <DatePicker Grid.Column="1" HorizontalAlignment="Left" Height="25px" Grid.Row="3"  Text="Enter Date of birth" VerticalAlignment="Top" Width="250" Background="#FFEDEDED" BorderBrush="#FFDFDFE0" Foreground="#FF7F7F84" FontSize="14"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="25px" Grid.Row="5" TextWrapping="Wrap" Text="Street Nr." VerticalAlignment="Top" Width="250" Margin="278,0,0,0" CaretBrush="#FFEAEAEA" Foreground="#FF7F7F84" BorderBrush="#FFABADB3" Background="#FFEAEAEA" FontSize="14"/>
+        <Button Content="Submit" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="11" VerticalAlignment="Top" Width="528" Height="25" Background="#FF0086FF" BorderBrush="#FF0086FF" Foreground="White" FontSize="14"/>
+        <ComboBox Grid.Column="1" SelectedValue="Country" HorizontalAlignment="Left" Margin="278,0,0,0" Grid.Row="3" VerticalAlignment="Top" Width="250" Height="25">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF0051FF" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="25px" Grid.Row="7" TextWrapping="Wrap" Text="PLZ" VerticalAlignment="Top" Width="250" CaretBrush="#FFEAEAEA" Foreground="#FF7F7F84" BorderBrush="#FFABADB3" Background="#FFEAEAEA" FontSize="14"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="25px" Grid.Row="7" TextWrapping="Wrap" Text="Region" VerticalAlignment="Top" Width="250" Margin="278,0,0,0" CaretBrush="#FFEAEAEA" Foreground="#FF7F7F84" BorderBrush="#FFABADB3" Background="#FFEAEAEA" FontSize="14"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="25px" Grid.Row="5" TextWrapping="Wrap" Text="Streetname" VerticalAlignment="Top" Width="250" CaretBrush="#FFEAEAEA" Foreground="#FF7F7F84" BorderBrush="#FFABADB3" Background="#FFEAEAEA" FontSize="14"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="25px" Grid.Row="9" TextWrapping="Wrap" Text="IBAN-Nr." VerticalAlignment="Top" Width="528" CaretBrush="#FFEAEAEA" Foreground="#FF7F7F84" BorderBrush="#FFABADB3" Background="#FFEAEAEA" FontSize="14"/>
+    </Grid>
+</Window>
